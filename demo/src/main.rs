@@ -42,7 +42,7 @@ pub fn next_chunk(buf: &mut MultiBuf) -> &[u8] {
 }
 
 fn main() {
-    let client: cxx::UniquePtr<ffi::BlobstorClient>
+    let client: cxx::UniquePtr<ffi::BlobstoreClient>
         = ffi::new_blobstore_client();
 
     // Upload a blob.
