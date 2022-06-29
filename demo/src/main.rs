@@ -56,4 +56,10 @@ fn main() {
     // Read back the tags.
     let metadata = client.metadata(blobid);
     println!("tags = {:?}", metadata.tags);
+    
+    let metadata = BlobMetadata {
+        size: 1,
+        tags: vec!["first".to_string(),
+                "second".to_string()]
+    };
 }
